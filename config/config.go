@@ -105,6 +105,8 @@ func (c *Config) fillDefaultValues() {
 		"pitaya.modules.bindingstorage.etcd.endpoints":     "localhost:2379",
 		"pitaya.modules.bindingstorage.etcd.leasettl":      "1h",
 		"pitaya.modules.bindingstorage.etcd.prefix":        "pitaya/",
+		"pitaya.router.ratelimiting.limit":                 20,
+		"pitaya.router.ratelimiting.interval":              "1s",
 		"pitaya.session.unique":                            true,
 		"pitaya.worker.concurrency":                        1,
 		"pitaya.worker.redis.pool":                         "10",

@@ -93,6 +93,9 @@ var GRPCExternalPortKey = "grpc-external-port"
 // RegionKey is the key to save the region server is on
 var RegionKey = "region"
 
+// RateLimitingKey is the key of rate limiting used on session's data
+var RateLimitingKey = "rate-limiting-key"
+
 // IP constants
 const (
 	IPVersionKey = "ipversion"

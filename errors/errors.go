@@ -33,6 +33,9 @@ const ErrNotFoundCode = "PIT-404"
 // ErrBadRequestCode is a string code representing a bad request related error
 const ErrBadRequestCode = "PIT-400"
 
+// ErrTooManyRequests is a string code representing a too many requests ("rate limiting") error
+const ErrTooManyRequests = "PIT-429"
+
 // ErrClientClosedRequest is a string code representing the client closed request error
 const ErrClientClosedRequest = "PIT-499"
 

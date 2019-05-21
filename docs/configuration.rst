@@ -418,3 +418,30 @@ These configurations are used for group services implementations.
     - 30s
     - time.Duration
     - Duration time of tick that will check if should delete group or not
+
+Router
+=================
+
+There configurations are used on router of frontend servers.
+
+.. list-table::
+  :widths: 15 10 10 50
+  :header-rows: 1
+  :stub-columns: 1
+
+  * - Configuration
+    - Default value
+    - Type
+    - Description
+  * - pitaya.router.ratelimiting.interval
+    - 1s
+    - time.Duration
+    - Window of time to count requests
+  * - pitaya.router.ratelimiting.limit
+    - 20
+    - int
+    - Max number of requests allowed in a interval
+  * - pitaya.router.ratelimiting.forcedisable
+    - false
+    - bool
+    - If true, ignores rate limiting even with WithRateLimiting decorator

@@ -29,6 +29,9 @@ When a server instance receives a client message, it checks the target server ty
 
 By default the routing function chooses one instance of the target server type at random. Custom functions can be defined to change this behavior.
 
+#### Rate limiting
+By adding a routing function, it is possible to wrap it with a rate limiting logic by using WithRateLimiting function. The requests counts and management is done on player's session, therefore it happens even before session bind. The used algorithm is the Leaky Bucket.
+
 ## Message push
 
 Messages can be pushed to users without previous information about either session or connection status. These push messages have a route (so that the client can identify the source and treat properly), the message, the target ids and the server type the client is expected to be connected to.

@@ -81,4 +81,5 @@ var (
 	ErrSessionOnNotify                = errors.New("current session working on notify mode")
 	ErrTimeoutTerminatingBinaryModule = errors.New("timeout waiting to binary module to die")
 	ErrWrongValueType                 = errors.New("protobuf: convert on wrong type value")
+	ErrExceededRateLimiting           = errors.New("exceeded rate limiting")
 )
