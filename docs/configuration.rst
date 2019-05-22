@@ -422,7 +422,7 @@ These configurations are used for group services implementations.
 Router
 =================
 
-There configurations are used on router of frontend servers.
+These configurations are used on router of frontend servers.
 
 .. list-table::
   :widths: 15 10 10 50
